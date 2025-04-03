@@ -1,11 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    "yoon jiwoo"
-</body>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>멋쟁이사자 13기 과제!!</title>
+    <style>
+      body {
+        background-color: aliceblue;
+        text-align: center;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        margin: 100px;
+      }
+
+      button {
+        color: white;
+        background-color: skyblue;
+        padding: 10px 15px;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>13기 프론트엔드 아기사자</h1>
+
+    <main>
+      <p>이름: 이현석</p>
+      <p>나이: 21살</p>
+      <p>취미: 축구, 코딩</p>
+    </main>
+
+    <button id="showIntro">자세히보기</button>
+
+    <div id="fullIntro">
+      <p id="message"></p>
+    </div>
+
+    <script>
+      document
+        .getElementById("showIntro")
+        .addEventListener("click", function () {
+          const Titleintro = document.getElementById("title");
+          const fullIntro = document.getElementById("fullIntro");
+
+          const name = "이현석";
+          const age = "21";
+          const hobby = "축구, 코딩";
+
+          const introTitle = "저를 소개합니다";
+          const introMessage = `안녕하세요! 제 이름은 ${name}이고, 나이는 ${age}살입니다. 제 취미는 ${hobby}입니다.`;
+
+          document.getElementById("message").textContent = introMessage;
+          fullIntro.style.display =
+            fullIntro.style.display === "none" || fullIntro.style.display === ""
+              ? "block"
+              : "none";
+        });
+    </script>
+  </body>
 </html>
