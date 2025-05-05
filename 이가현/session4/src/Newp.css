@@ -112,3 +112,98 @@
 .second3 {
   margin-top: 5px;
 }
+
+.image3 {
+  position: relative;
+  width: 400px;
+  height: auto;
+}
+
+.image3 img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.image3 img:hover {
+  transform: scale(1.03);
+  transform-origin: center;
+}
+
+.text3 {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  text-align: left;
+  color: black;
+  font-size: 20px;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.third1 {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.third2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.third3 {
+  margin-top: 5px;
+}
+
+.image4 {
+  position: relative;
+  width: 400px;
+  height: auto;
+}
+
+.image4 img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.image4 img:hover {
+  transform: scale(1.03);
+  transform-origin: center;
+}
+
+.text4 {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  text-align: left;
+  color: black;
+  font-size: 20px;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.fourth1 {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.fourth2 {
+  background: linear-gradient(to right, #5555f5, rgb(237, 26, 61));
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.fourth3 {
+  margin-top: 5px;
+}
