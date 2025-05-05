@@ -1,0 +1,29 @@
+.product {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 130px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.item img {
+  width: 150px;
+}
+
+.item p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+}
+
+.item p:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  margin-top: 2px;
+  background-color: white;
+  color: black;
+}
+
+.logo img {
+  width: 20px;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav li {
+  cursor: pointer;
+  font-weight: 300;
+}
+
+.nav li:hover {
+  text-decoration: underline;
+}
+
+.searchicon {
+  width: 7px;
+  margin-top: 7px;
+  margin-left: 35px;
+}
+
+.carticon {
+  width: 3px;
+  margin-top: 7px;
+  margin-left: 55px;
+}
