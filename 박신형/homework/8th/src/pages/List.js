@@ -30,6 +30,7 @@ function StateEx2() {
       // input, 이전 값
       return [...prevState, input];
     });
+    setInput("");
   };
 
   return (
