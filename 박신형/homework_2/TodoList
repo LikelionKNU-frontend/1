@@ -1,0 +1,58 @@
+import React, { useState, useRef } from "react";
+
+function TodoList() {
+  const [todos, setTodos] = useState([]);
+  const [inputValue, setInputValue] = useState("");
+  const inputRef = useRef(null);
+
+  const addTodo = () => {
+    if (inputValue.trim() !== "") {
+      setTodos([...todos, inputValue]);
+      setInputValue("");
+      inputRef.current.focus();
+    }
+  };
+
+  const deleteTodo = (index) => {
+    setTodos(todos.filter((_, i) => i !== index));
+  };
+
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") addTodo();
+  };
+
+  return (
+    <div className="p-4">
+      <h1 className="text-2xl font-bold mb-4">Todo List</h1>
+      <input
+        ref={inputRef}
+        className="border p-2 mb-2 w-full"
+        placeholder="투두리스트를 입력하세요."
+        value={inputValue}
+        onChange={(e) => setInputValue(e.target.value)}
+        onKeyPress={handleKeyPress}
+      />
+      <button
+        onClick={addTodo}
+        className="bg-blue-500 text-white px-4 py-2 mb-4"
+      >
+        등록
+      </button>
+      <ul>
+        {todos.map((todo, index) => (
+          <li key={index} className="flex justify-between items-center mb-2">
+            <span>{todo}</span>
+            <button
+              onClick={() => deleteTodo(index)}
+              className="bg-red-500 text-white px-2 py-1"
+            >
+              삭제
+            </button>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export default TodoList;
